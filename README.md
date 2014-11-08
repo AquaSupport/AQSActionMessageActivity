@@ -1,6 +1,8 @@
 AQSActionMessageActivity
 ========================
 
+![](http://img.shields.io/cocoapods/v/AQSActionMessageActivity.svg?style=flat) [![Build Status](https://travis-ci.org/AquaSupport/AQSActionMessageActivity.svg?branch=master)](https://travis-ci.org/AquaSupport/AQSActionMessageActivity)
+
 [iOS] UIActivity class for Message that appears in Action in UIActivityViewController
 
 Usage
