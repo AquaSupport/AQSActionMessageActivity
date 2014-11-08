@@ -97,7 +97,7 @@
     UIImage *image = [self nilOrFirstImageFromArray:_activityItems];
     
     if (!!image && [self isAvailableForAttachments]) {
-        [viewController addAttachmentData:UIImagePNGRepresentation(image) typeIdentifier:@"image/jpeg" filename:@"image.png"];
+        [viewController addAttachmentData:UIImagePNGRepresentation(image) typeIdentifier:@"image/png" filename:@"image.png"];
     }
     
     if (!!text && !!URL) {

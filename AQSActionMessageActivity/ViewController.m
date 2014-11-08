@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 
+#import "AQSActionMessageActivity.h"
+
 @interface ViewController ()
 
 @end
@@ -16,7 +18,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    UIActivity *activity = [[AQSActionMessageActivity alloc] init];
+    NSArray *items = @[
+                       @"body",
+                       [NSURL URLWithString:@"http://google.com/"]
+                       ];
+    
+    UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:items applicationActivities:@[activity]];
+    
+    [self presentViewController:activityViewController animated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning {
